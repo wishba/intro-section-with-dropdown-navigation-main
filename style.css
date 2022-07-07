@@ -16,7 +16,7 @@ p {
 
 button {
   padding: 13px 20px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 header {
@@ -40,6 +40,14 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
+  padding: 20px;
+  width: 200px;
+}
+
+.button__close {
+  height: 1.5em;
+  position: absolute;
+  right: 20px;
 }
 
 .nav__link {
@@ -50,48 +58,35 @@ nav a {
   display: block;
   color: hsl(0, 0%, 41%);
   text-decoration: none;
-}
-
-.button__close {
-  height: 1em;
-  position: absolute;
-  right: 0;
-}
-
-nav button {
-  display: block;
-}
-
-.nav__button {
-  /* text-align: center; */
+  padding: 10px;
 }
 
 .button__login {
   color: hsl(0, 0%, 41%);
   background-color: hsl(0, 0%, 98%);
-  /* border: none; */
+  border: none;
+  width: 100%;
 }
 
 .button__register {
   color: hsl(0, 0%, 41%);
   background-color: hsl(0, 0%, 98%);
   border-color: hsl(0, 0%, 41%);
-  ;
+  width: 100%;
 }
 
 article {
   max-width: 1000px;
   margin: auto;
-  /* top: 0; */
+}
+
+.section__image {
+  width: 100%;
 }
 
 .section__main {
   padding: 20px 15px;
   text-align: center;
-}
-
-.section__image {
-  width: 100%;
 }
 
 .button__more {
