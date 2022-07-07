@@ -16,6 +16,14 @@ p {
   color: hsl(0, 0%, 41%);
 }
 
+button {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
 .section__image {
   width: 100%;
 }
