@@ -1,0 +1,21 @@
+h1,
+p {
+  text-align: center;
+}
+
+.section__image {
+  width: 100%;
+}
+
+.section__client img {
+  width: 25%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
