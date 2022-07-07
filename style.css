@@ -14,6 +14,11 @@ p {
   color: hsl(0, 0%, 41%);
 }
 
+button {
+  padding: 13px 20px;
+  border-radius: 10px;
+}
+
 header {
   padding: 20px 15px;
 }
@@ -28,9 +33,42 @@ header {
   width: 10%;
 }
 
+nav {
+  /* display: none; */
+  position: fixed;
+  background-color: hsl(0, 0%, 98%);
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+nav a {
+  display: block;
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+
+nav button {
+  display: block;
+}
+
+.button__login {
+  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  border: none;
+}
+
+.button__register {
+  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  border-color: hsl(0, 0%, 41%);
+  ;
+}
+
 article {
   max-width: 1000px;
   margin: auto;
+  /* top: 0; */
 }
 
 .section__main {
@@ -42,12 +80,10 @@ article {
   width: 100%;
 }
 
-button {
-  color: hsl(0, 0%, 98%);
+.button__more {
   background-color: hsl(0, 0%, 8%);
-  padding: 13px 20px;
+  color: hsl(0, 0%, 98%);
   border: none;
-  border-radius: 10px;
 }
 
 .attribution {
