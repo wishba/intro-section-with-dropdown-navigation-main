@@ -35,11 +35,15 @@ header {
 
 nav {
   /* display: none; */
-  position: fixed;
   background-color: hsl(0, 0%, 98%);
   height: 100%;
+  position: fixed;
   top: 0;
   right: 0;
+}
+
+.nav__link {
+  padding-top: 30px;
 }
 
 nav a {
@@ -48,14 +52,24 @@ nav a {
   text-decoration: none;
 }
 
+.button__close {
+  height: 1em;
+  position: absolute;
+  right: 0;
+}
+
 nav button {
   display: block;
+}
+
+.nav__button {
+  /* text-align: center; */
 }
 
 .button__login {
   color: hsl(0, 0%, 41%);
   background-color: hsl(0, 0%, 98%);
-  border: none;
+  /* border: none; */
 }
 
 .button__register {
