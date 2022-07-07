@@ -18,13 +18,13 @@
     </div>
 
     <div class="menu">
-      <img src="images/icon-menu.svg" alt="menu icon">
+      <img onclick="openNav()" src=" images/icon-menu.svg" alt="menu icon">
     </div>
   </header>
 
-  <nav>
+  <nav id="sidenav">
     <a href="javascript:void(0)">
-      <img class="button__close" src="images/icon-close-menu.svg" alt="close menu icon">
+      <img class="button__close" onclick="closeNav()" src="images/icon-close-menu.svg" alt="close menu icon">
     </a>
 
     <div class="nav__link">
@@ -71,6 +71,16 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidenav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("sidenav").style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
