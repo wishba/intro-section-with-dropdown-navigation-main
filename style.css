@@ -6,12 +6,12 @@ body {
 }
 
 h1 {
-  text-align: center;
+  /* text-align: center; */
   color: hsl(0, 0%, 8%);
 }
 
 p {
-  text-align: center;
+  /* text-align: center; */
   font-size: 18px;
   color: hsl(0, 0%, 41%);
 }
@@ -34,6 +34,10 @@ button {
 
 .section__image {
   width: 100%;
+}
+
+.section__main {
+  text-align: center;
 }
 
 .section__client img {
