@@ -1,6 +1,19 @@
-h1,
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+  text-align: center;
+  color: hsl(0, 0%, 8%);
+}
+
 p {
   text-align: center;
+  font-size: 18px;
+  color: hsl(0, 0%, 41%);
 }
 
 .section__image {
