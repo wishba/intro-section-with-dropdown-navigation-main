@@ -6,12 +6,10 @@ body {
 }
 
 h1 {
-  /* text-align: center; */
   color: hsl(0, 0%, 8%);
 }
 
 p {
-  /* text-align: center; */
   font-size: 18px;
   color: hsl(0, 0%, 41%);
 }
@@ -41,10 +39,12 @@ button {
 }
 
 .section__client img {
-  width: 20%;
+  float: left;
+  width: 25%;
 }
 
 .attribution {
+  clear: both;
   font-size: 11px;
   text-align: center;
 }
