@@ -24,6 +24,14 @@ button {
   border-radius: 10px;
 }
 
+.logo {
+  float: left;
+}
+
+.menu {
+  float: right;
+}
+
 .section__image {
   width: 100%;
 }
