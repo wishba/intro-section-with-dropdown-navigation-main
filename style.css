@@ -14,33 +14,31 @@ p {
   color: hsl(0, 0%, 41%);
 }
 
-button {
-  color: hsl(0, 0%, 98%);
-  background-color: hsl(0, 0%, 8%);
-  padding: 15px;
-  border: none;
-  border-radius: 10px;
-}
-
 .logo {
   float: left;
+  width: 90%;
 }
 
 .menu {
   float: right;
+  width: 10%;
+}
+
+article {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .section__image {
   width: 100%;
 }
 
-.section__main {
-  text-align: center;
-}
-
-.section__client img {
-  float: left;
-  width: 25%;
+button {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
 }
 
 .attribution {
@@ -51,4 +49,17 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* when the screen is more than 375px wide */
+@media screen and (min-width: 375px) {
+  .section__image {
+    content: url(images/image-hero-desktop.png);
+    float: right;
+    width: 40%;
+  }
+
+  .section__client {
+    width: 60%;
+  }
 }
