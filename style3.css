@@ -63,8 +63,13 @@ header {
     width: 40%;
   }
 
-  .section__main {
+  .section__main,
+  .section__client {
     float: left;
     width: 60%;
+  }
+
+  .attribution {
+    clear: both;
   }
 }
