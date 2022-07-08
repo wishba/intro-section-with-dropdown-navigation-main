@@ -29,6 +29,11 @@ header {
   width: 100%;
 }
 
+.attribution {
+  clear: both;
+  text-align: center;
+}
+
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
   .btn-open {
@@ -74,7 +79,8 @@ header {
     width: 60%;
   }
 
-  .attribution {
+  /* .attribution {
     clear: both;
-  }
+    text-align: center;
+  } */
 }
