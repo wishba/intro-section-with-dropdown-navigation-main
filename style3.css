@@ -25,6 +25,10 @@ header {
   width: 100%;
 }
 
+.section__image {
+  width: 100%;
+}
+
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
   .btn-open {
@@ -50,5 +54,9 @@ header {
 
   .nav__button button {
     width: auto;
+  }
+
+  .section__image {
+    content: url(images/image-hero-desktop.png);
   }
 }
