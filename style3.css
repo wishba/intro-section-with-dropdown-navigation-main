@@ -1,15 +1,14 @@
-.topnav__link {
-  /* display: block; */
-  display: none;
+.nav--open .nav__link {
+  display: block;
 }
 
-.topnav.responsive .topnav__link {
-  display: block;
+.nav__link {
+  display: none;
 }
 
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
-  .topnav__link {
+  .nav__link {
     display: block;
   }
 }

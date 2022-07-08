@@ -29,13 +29,16 @@
       <img class="button__close" onclick="closeNav()" src="images/icon-close-menu.svg" alt="close menu icon">
     </a> -->
 
-  <div class="topnav" id="myTopnav">
+  <div class="nav" id="myNav">
     <img onclick="openNav()" src="images/icon-menu.svg" alt="open menu">
     <img onclick="closeNav()" src="images/icon-close-menu.svg " alt="close menu">
-    <a class="topnav__link" href="#">Features</a>
-    <a class="topnav__link" href="#">Company</a>
-    <a class="topnav__link" href="#">Careers</a>
-    <a class="topnav__link" href="#">About</a>
+
+    <div class="nav__link">
+      <a href="#">Features</a>
+      <a href="#">Company</a>
+      <a href="#">Careers</a>
+      <a href="#">About</a>
+    </div>
   </div>
 
   <!-- <button class="button__login">Login</button>
@@ -96,13 +99,11 @@
     // }
 
     function openNav() {
-
-      document.getElementById("myTopnav").className = "topnav responsive";
+      document.getElementById("myNav").className = "nav nav--open";
     }
 
     function closeNav() {
-
-      document.getElementById("myTopnav").className = "topnav";
+      document.getElementById("myNav").className = "nav";
     }
   </script>
 </body>
