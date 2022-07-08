@@ -31,8 +31,12 @@
 
   <div class="topnav" id="myTopnav">
     <!-- <div class="nav__link"> -->
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+    <a onclick="openNav()" class="icon" href="javascript:void(0);">
+      <!-- <a onclick="myFunction()" class="icon" href="javascript:void(0);"> -->
       <img src="images/icon-menu.svg" alt="open menu">
+    </a>
+    <a onclick="closeNav()" class="icon" href="javascript:void(0);">
+      <img src="images/icon-close-menu.svg " alt="close menu">
     </a>
     <a class="topnav__link" href="#">Features</a>
     <a class="topnav__link" href="#">Company</a>
@@ -87,12 +91,26 @@
     //   document.getElementById("sidenav").style.display = "none";
     // }
 
-    function myFunction() {
+    // function myFunction() {
+    //   const x = document.getElementById("myTopnav");
+    //   if (x.className === "topnav") {
+    //     // x.className += " responsive";
+    //     x.className = "topnav responsive";
+    //   } else {
+    //     x.className = "topnav";
+    //   }
+    // }
+
+    function openNav() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
-        // x.className += " responsive";
         x.className = "topnav responsive";
-      } else {
+      }
+    }
+
+    function closeNav() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav responsive") {
         x.className = "topnav";
       }
     }
