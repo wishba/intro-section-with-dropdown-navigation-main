@@ -12,6 +12,11 @@ p {
   font-size: 18px;
 }
 
+button {
+  padding: 13px 20px;
+  border-radius: 15px;
+}
+
 header {
   float: left;
 }
