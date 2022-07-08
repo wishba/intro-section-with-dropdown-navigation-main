@@ -57,6 +57,14 @@ header {
   }
 
   .section__image {
+    clear: both;
     content: url(images/image-hero-desktop.png);
+    float: right;
+    width: 40%;
+  }
+
+  .section__main {
+    float: left;
+    width: 60%;
   }
 }
