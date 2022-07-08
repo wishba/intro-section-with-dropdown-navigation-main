@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style3.css">
+  <!-- <link rel="stylesheet" href="style2.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 
 <body>
 
-  <header>
+  <!-- <header>
     <div class="logo">
       <img src="images/logo.svg" alt="snap logo">
     </div>
@@ -20,25 +22,27 @@
     <div class="menu">
       <img onclick="openNav()" src=" images/icon-menu.svg" alt="menu icon">
     </div>
-  </header>
+  </header> -->
 
-  <nav id="sidenav">
-    <a href="javascript:void(0)">
+  <!-- <nav id="sidenav"> -->
+  <!-- <a href="javascript:void(0)">
       <img class="button__close" onclick="closeNav()" src="images/icon-close-menu.svg" alt="close menu icon">
-    </a>
+    </a> -->
 
-    <div class="nav__link">
-      <a href="#">Features</a>
-      <a href="#">Company</a>
-      <a href="#">Careers</a>
-      <a href="#">About</a>
-    </div>
+  <div class="topnav" id="myTopnav">
+    <!-- <div class="nav__link"> -->
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a class="topnav__link" href="#">Features</a>
+    <a class="topnav__link" href="#">Company</a>
+    <a class="topnav__link" href="#">Careers</a>
+    <a class="topnav__link" href="#">About</a>
+  </div>
 
-    <button class="button__login">Login</button>
-    <button class="button__register">Register</button>
-  </nav>
+  <!-- <button class="button__login">Login</button>
+    <button class="button__register">Register</button> -->
+  <!-- </nav> -->
 
-  <article>
+  <!-- <article>
 
     <section>
       <img class="section__image" src="images/image-hero-mobile.png" alt="illustration">
@@ -62,23 +66,33 @@
       <img src="images/client-maker.svg" alt="maker logo">
     </section>
 
-  </article>
+  </article> -->
 
 
-  <footer>
+  <!-- <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </div>
-  </footer>
+  </footer> -->
 
   <script>
-    function openNav() {
-      document.getElementById("sidenav").style.display = "block";
-    }
+    // function openNav() {
+    //   document.getElementById("sidenav").style.display = "block";
+    // }
 
-    function closeNav() {
-      document.getElementById("sidenav").style.display = "none";
+    // function closeNav() {
+    //   document.getElementById("sidenav").style.display = "none";
+    // }
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        // x.className += " responsive";
+        x.className = "topnav responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
   </script>
 </body>
