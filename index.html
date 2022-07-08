@@ -30,14 +30,8 @@
     </a> -->
 
   <div class="topnav" id="myTopnav">
-    <!-- <div class="nav__link"> -->
-    <a onclick="openNav()" class="icon" href="javascript:void(0);">
-      <!-- <a onclick="myFunction()" class="icon" href="javascript:void(0);"> -->
-      <img src="images/icon-menu.svg" alt="open menu">
-    </a>
-    <a onclick="closeNav()" class="icon" href="javascript:void(0);">
-      <img src="images/icon-close-menu.svg " alt="close menu">
-    </a>
+    <img onclick="openNav()" src="images/icon-menu.svg" alt="open menu">
+    <img onclick="closeNav()" src="images/icon-close-menu.svg " alt="close menu">
     <a class="topnav__link" href="#">Features</a>
     <a class="topnav__link" href="#">Company</a>
     <a class="topnav__link" href="#">Careers</a>
@@ -102,22 +96,14 @@
     // }
 
     function openNav() {
-      // var x = document.getElementById("myTopnav");
-      // if (x.className === "topnav") {
-      //   x.className = "topnav responsive";
-      // }
+
       document.getElementById("myTopnav").className = "topnav responsive";
     }
 
     function closeNav() {
-      // var x = document.getElementById("myTopnav");
-      // if (x.className === "topnav responsive") {
-      //   x.className = "topnav";
-      // }
+
       document.getElementById("myTopnav").className = "topnav";
     }
-
-    // document.getElementById("myDIV").className = "newStyle";
   </script>
 </body>
 

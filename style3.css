@@ -1,7 +1,6 @@
 .topnav__link {
   /* display: block; */
   display: none;
-  float: none;
 }
 
 .topnav.responsive .topnav__link {
@@ -12,6 +11,5 @@
 @media screen and (min-width: 375px) {
   .topnav__link {
     display: block;
-    float: left;
   }
 }
