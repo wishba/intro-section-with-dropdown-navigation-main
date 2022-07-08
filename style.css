@@ -40,6 +40,8 @@ header {
 
 .nav__link a {
   display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
 }
 
 .nav__button button {
