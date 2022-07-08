@@ -13,12 +13,13 @@ p {
 }
 
 button {
-  padding: 13px 20px;
+  padding: 10px 20px;
   border-radius: 15px;
 }
 
 header {
   float: left;
+  padding: 20px 10px;
 }
 
 .nav--open .nav__container {
@@ -29,6 +30,7 @@ header {
 
 .btn-open {
   float: right;
+  padding: 20px 10px;
 }
 
 .nav__container {
@@ -38,10 +40,25 @@ header {
   right: 0;
 }
 
+.btn-close {
+  position: absolute;
+  left: 170px;
+  top: 20px;
+}
+
+.nav__link {
+  padding-top: 50px;
+}
+
 .nav__link a {
   display: block;
   text-decoration: none;
   color: hsl(0, 0%, 41%);
+  padding: 10px 20px;
+}
+
+.nav__button {
+  padding: 10px;
 }
 
 .nav__button button {
@@ -72,6 +89,10 @@ article {
   border: none;
 }
 
+.section__client img {
+  padding: 10px;
+}
+
 .attribution {
   clear: both;
   text-align: center;
@@ -90,6 +111,10 @@ article {
 
   .btn-close {
     display: none;
+  }
+
+  .nav__link {
+    padding-top: 10px;
   }
 
   .nav__link a {
@@ -122,9 +147,4 @@ article {
     float: left;
     width: 60%;
   }
-
-  /* .attribution {
-    clear: both;
-    text-align: center;
-  } */
 }
