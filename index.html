@@ -14,36 +14,27 @@
 
 <body>
 
-  <!-- <header>
-    <div class="logo">
-      <img src="images/logo.svg" alt="snap logo">
-    </div>
+  <header>
+    <img src="images/logo.svg" alt="snap logo">
+  </header>
 
-    <div class="menu">
-      <img onclick="openNav()" src=" images/icon-menu.svg" alt="menu icon">
-    </div>
-  </header> -->
-
-  <!-- <nav id="sidenav"> -->
-  <!-- <a href="javascript:void(0)">
-      <img class="button__close" onclick="closeNav()" src="images/icon-close-menu.svg" alt="close menu icon">
-    </a> -->
-
-  <div class="nav" id="myNav">
-    <a class="nav__btn" href="javascript:void(0);">
+  <nav class="nav" id="myNav">
+    <a class="btn-open" href="javascript:void(0);">
       <img onclick="openNav()" src="images/icon-menu.svg" alt="open menu">
     </a>
 
-    <div class="nav__link">
-      <a class="nav__btn" href="javascript:void(0)">
+    <div class="nav__container">
+      <a class="btn-close" href="javascript:void(0)">
         <img onclick="closeNav()" src="images/icon-close-menu.svg " alt="close menu">
       </a>
-      <a href="#">Features</a>
-      <a href="#">Company</a>
-      <a href="#">Careers</a>
-      <a href="#">About</a>
+      <div class="nav__link">
+        <a href="#">Features</a>
+        <a href="#">Company</a>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
     </div>
-  </div>
+  </nav>
 
   <!-- <button class="button__login">Login</button>
     <button class="button__register">Register</button> -->
@@ -84,24 +75,6 @@
   </footer> -->
 
   <script>
-    // function openNav() {
-    //   document.getElementById("sidenav").style.display = "block";
-    // }
-
-    // function closeNav() {
-    //   document.getElementById("sidenav").style.display = "none";
-    // }
-
-    // function myFunction() {
-    //   const x = document.getElementById("myTopnav");
-    //   if (x.className === "topnav") {
-    //     // x.className += " responsive";
-    //     x.className = "topnav responsive";
-    //   } else {
-    //     x.className = "topnav";
-    //   }
-    // }
-
     function openNav() {
       document.getElementById("myNav").className = "nav nav--open";
     }
