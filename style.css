@@ -37,6 +37,16 @@ header {
 
 .nav__button button {
   width: 100%;
+  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.btn-login {
+  border: none;
+}
+
+.btn-register {
+  border-color: hsl(0, 0%, 41%);
 }
 
 article {
@@ -45,6 +55,12 @@ article {
 
 .section__image {
   width: 100%;
+}
+
+.btn-more {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  border: none;
 }
 
 .attribution {
