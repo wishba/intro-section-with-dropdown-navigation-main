@@ -21,6 +21,10 @@ header {
   display: block;
 }
 
+.nav__button button {
+  width: 100%;
+}
+
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
   .btn-open {
@@ -38,5 +42,13 @@ header {
 
   .nav__link a {
     float: left;
+  }
+
+  .nav__button {
+    float: right;
+  }
+
+  .nav__button button {
+    width: auto;
   }
 }
