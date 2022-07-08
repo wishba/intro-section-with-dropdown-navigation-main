@@ -56,8 +56,13 @@ header {
     width: auto;
   }
 
-  .section__image {
+  article {
     clear: both;
+    width: 80%;
+    margin: auto;
+  }
+
+  .section__image {
     content: url(images/image-hero-desktop.png);
     float: right;
     width: 40%;
