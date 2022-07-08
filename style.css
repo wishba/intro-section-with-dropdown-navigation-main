@@ -18,6 +18,8 @@ header {
 
 .nav--open .nav__container {
   display: block;
+  background-color: hsl(0, 0%, 98%);
+  height: 100%
 }
 
 .btn-open {
