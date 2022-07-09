@@ -57,6 +57,10 @@ header {
   padding-left: 1em;
 }
 
+.nav__arrow a {
+  display: none;
+}
+
 .nav__button {
   padding: 10px;
 }
