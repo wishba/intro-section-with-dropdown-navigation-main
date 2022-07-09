@@ -60,6 +60,7 @@ header {
 .nav__features,
 .nav__company {
   display: none;
+  padding-left: 1em;
 }
 
 .nav__button {

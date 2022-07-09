@@ -17,7 +17,7 @@
     <img src="images/logo.svg" alt="snap logo">
   </header>
 
-  <nav class="nav" id="myNav">
+  <nav class="nav" id="nav">
     <a class="btn-open" href="javascript:void(0);">
       <img onclick="openNav()" src="images/icon-menu.svg" alt="open menu">
     </a>
@@ -28,11 +28,11 @@
       </a>
 
       <div class="nav__link">
-        <a href="javascript:void(0)">
+        <a onclick="menuFeature()" href="javascript:void(0)">
           Features
           <img class="nav__arrow" src="images/icon-arrow-down.svg" alt="feature dropdown menu">
         </a>
-        <div class="nav__features">
+        <div id="navFeatures" class="nav__features">
           <a href="#">
             <img src="images/icon-todo.svg" alt="todo icon">
             Todo List
@@ -51,11 +51,11 @@
           </a>
         </div>
 
-        <a href="javascript:void(0)">
+        <a onclick="menuCompany()" href="javascript:void(0)">
           Company
           <img class="nav__arrow" src="images/icon-arrow-down.svg" alt="Company dropdown menu">
         </a>
-        <div class="nav__company">
+        <div id="navCompany" class="nav__company">
           <a href="#">History</a>
           <a href="#">Our Team</a>
           <a href="#">Blog</a>
@@ -103,11 +103,29 @@
 
   <script>
     function openNav() {
-      document.getElementById("myNav").className = "nav nav--open";
+      document.getElementById("nav").className = "nav nav--open";
     }
 
     function closeNav() {
-      document.getElementById("myNav").className = "nav";
+      document.getElementById("nav").className = "nav";
+    }
+
+    function menuFeature() {
+      const x = document.getElementById("navFeatures");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function menuCompany() {
+      const x = document.getElementById("navCompany");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
     }
   </script>
 </body>
