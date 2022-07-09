@@ -53,6 +53,10 @@ header {
   padding: 10px 20px;
 }
 
+.nav__link a img {
+  padding-left: 1em;
+}
+
 .nav__button {
   padding: 10px;
 }
