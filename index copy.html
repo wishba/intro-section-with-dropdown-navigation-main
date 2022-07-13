@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="images/logo.svg" alt="snap logo">
+  </header>
+
+  <nav class="nav" id="nav">
+    <a class="btn-open" href="javascript:void(0);">
+      <img onclick="openNav()" src="images/icon-menu.svg" alt="open menu">
+    </a>
+
+    <div class="nav__container">
+      <a class="btn-close" href="javascript:void(0)">
+        <img onclick="closeNav()" src="images/icon-close-menu.svg " alt="close menu">
+      </a>
+
+      <div class="nav__link">
+        <a onclick="menuFeature()" href="javascript:void(0)">
+          Features
+          <img class="nav__arrow" src="images/icon-arrow-down.svg" alt="feature dropdown menu">
+        </a>
+        <div id="navFeatures" class="nav__features">
+          <a href="#">
+            <img src="images/icon-todo.svg" alt="todo icon">
+            Todo List
+          </a>
+          <a href="#">
+            <img src="images/icon-calendar.svg" alt="calendar icon">
+            Calendar
+          </a>
+          <a href="#">
+            <img src="images/icon-reminders.svg" alt="reminder icon">
+            Reminders
+          </a>
+          <a href="#">
+            <img src="images/icon-planning.svg" alt="planing icon">
+            Planning
+          </a>
+        </div>
+
+        <a onclick="menuCompany()" href="javascript:void(0)">
+          Company
+          <img class="nav__arrow" src="images/icon-arrow-down.svg" alt="Company dropdown menu">
+        </a>
+        <div id="navCompany" class="nav__company">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
+
+      <div class="nav__button">
+        <button class="btn-login">Login</button>
+        <button class="btn-register">Register</button>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <section>
+      <img class="section__image" src="images/image-hero-mobile.png" alt="illustration">
+    </section>
+
+    <section class="section__main">
+      <p class="section__header">Make remote work</p>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="btn-more">Learn more</button>
+    </section>
+
+    <section class="section__client">
+      <img src="images/client-databiz.svg" alt="databiz logo">
+      <img src="images/client-audiophile.svg" alt="audiophile logo">
+      <img src="images/client-meet.svg" alt="meet logo">
+      <img src="images/client-maker.svg" alt="maker logo">
+    </section>
+  </article>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/wishba">Wisnu Bayu</a>.
+    </div>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("nav").className = "nav nav--open";
+    }
+
+    function closeNav() {
+      document.getElementById("nav").className = "nav";
+    }
+
+    function menuFeature() {
+      const x = document.getElementById("navFeatures");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function menuCompany() {
+      const x = document.getElementById("navCompany");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>

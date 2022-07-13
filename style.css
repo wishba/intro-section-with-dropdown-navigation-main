@@ -1,135 +1,62 @@
 body {
-  background-color: hsl(0, 0%, 98%);
-  font-family: 'Epilogue', sans-serif;
+  margin: 0;
 }
 
 p {
-  color: hsl(0, 0%, 41%);
   font-size: 18px;
+  font-family: 'Epilogue', sans-serif;
 }
 
-button {
-  padding: 10px 20px;
-  border-radius: 15px;
-}
-
-header {
+header img {
   float: left;
-  padding: 20px 10px;
 }
 
-.nav--open .nav__container {
-  display: block;
-  background-color: hsl(0, 0%, 98%);
-  height: 100%
-}
-
-.btn-open {
+header a {
   float: right;
-  padding: 20px 10px;
 }
 
-.nav__container {
+nav {
   display: none;
   position: fixed;
   top: 0;
   right: 0;
 }
 
-.btn-close {
-  position: absolute;
-  left: 170px;
-  top: 20px;
-}
-
-.nav__link {
-  padding-top: 50px;
-}
-
-.nav__link a {
+nav a,
+nav button {
   display: block;
-  text-decoration: none;
-  color: hsl(0, 0%, 41%);
-  padding: 10px 20px;
 }
 
-.nav__arrow {
-  padding-left: 1em;
+.nav__close {
+  text-align: right;
 }
 
-.nav__features,
-.nav__company {
+.nav__menu {
   display: none;
-  padding-left: 1em;
+  padding: 0 1em;
 }
 
-.nav__button {
-  padding: 10px;
-}
-
-.nav__button button {
+.section__image img {
   width: 100%;
-  color: hsl(0, 0%, 41%);
-  background-color: hsl(0, 0%, 98%);
-}
-
-.btn-login {
-  border: none;
-}
-
-.btn-register {
-  border-color: hsl(0, 0%, 41%);
-}
-
-article {
-  text-align: center;
-}
-
-.section__image {
-  width: 100%;
-}
-
-.section__header {
-  color: hsl(0, 0%, 8%);
-  font-size: 2.5em;
-  font-weight: 700;
-}
-
-.btn-more {
-  color: hsl(0, 0%, 98%);
-  background-color: hsl(0, 0%, 8%);
-  border: none;
-}
-
-.section__client img {
-  padding: 10px;
-}
-
-.attribution {
-  clear: both;
-  text-align: center;
 }
 
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
-  .btn-open {
+  header a {
     display: none;
   }
 
-  .nav__container {
-    display: block;
+  nav {
     position: static;
+    display: block;
+    overflow: auto;
   }
 
-  .btn-close {
+  .nav__close {
     display: none;
   }
 
   .nav__link {
-    padding-top: 10px;
-  }
-
-  .nav__link a {
     float: left;
   }
 
@@ -138,33 +65,31 @@ article {
   }
 
   .nav__button button {
-    width: auto;
+    display: inline;
   }
 
   article {
-    clear: both;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    text-align: left;
+    overflow: auto;
   }
 
   .section__image {
-    content: url(images/image-hero-desktop.png);
     float: right;
-    width: 40%;
+    width: 30%;
   }
 
-  .section__main {
-    float: left;
-    width: 50%;
+  .section__image img {
+    content: url(images/image-hero-desktop.png);
   }
 
-  .section__header {
-    font-size: 5vw;
-  }
-
+  .section__main,
   .section__client {
     float: left;
-    width: 60%;
+    width: 65%;
+  }
+
+  footer {
+    text-align: center;
   }
 }

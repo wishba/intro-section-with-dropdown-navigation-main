@@ -1,0 +1,182 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Epilogue', sans-serif;
+  margin: 0;
+}
+
+p {
+  color: hsl(0, 0%, 41%);
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+header {
+  float: left;
+  padding: 20px 10px;
+}
+
+.nav--open .nav__container {
+  display: block;
+  background-color: hsl(0, 0%, 98%);
+  height: 100%
+}
+
+.btn-open {
+  float: right;
+  padding: 20px 10px;
+}
+
+.nav__container {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.btn-close {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+
+.nav__link {
+  padding-top: 50px;
+}
+
+.nav__link a {
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  padding: 10px 20px;
+}
+
+.nav__arrow {
+  padding-left: 1em;
+}
+
+.nav__features,
+.nav__company {
+  display: none;
+  padding-left: 1em;
+}
+
+.nav__button {
+  padding: 10px;
+}
+
+.nav__button button {
+  width: 100%;
+  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.btn-login {
+  border: none;
+}
+
+.btn-register {
+  border-color: hsl(0, 0%, 41%);
+}
+
+article {
+  text-align: center;
+}
+
+.section__image {
+  width: 100%;
+}
+
+.section__header {
+  color: hsl(0, 0%, 8%);
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.btn-more {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  border: none;
+}
+
+.section__client img {
+  padding: 10px;
+}
+
+.attribution {
+  clear: both;
+  text-align: center;
+}
+
+/* when the screen is more than 375px wide */
+@media screen and (min-width: 375px) {
+  .btn-open {
+    display: none;
+  }
+
+  .nav__container {
+    display: block;
+    position: static;
+  }
+
+  .btn-close {
+    display: none;
+  }
+
+  .nav__link {
+    padding-top: 10px;
+  }
+
+  .nav__link a {
+    float: left;
+  }
+
+  .nav__features {
+    overflow: hidden;
+    /* clear: both; */
+    /* float: left; */
+  }
+
+  .nav__features a {
+    float: none;
+    clear: both;
+  }
+
+  .nav__button {
+    float: right;
+  }
+
+  .nav__button button {
+    width: auto;
+  }
+
+  article {
+    clear: both;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+  }
+
+  .section__image {
+    content: url(images/image-hero-desktop.png);
+    float: right;
+    width: 40%;
+  }
+
+  .section__main {
+    float: left;
+    width: 50%;
+  }
+
+  .section__header {
+    font-size: 5vw;
+  }
+
+  .section__client {
+    float: left;
+    width: 60%;
+  }
+}
