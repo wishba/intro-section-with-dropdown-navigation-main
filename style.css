@@ -40,6 +40,15 @@ nav button {
   width: 100%;
 }
 
+.section__main,
+.section__client {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
   header a {
@@ -87,9 +96,6 @@ nav button {
   .section__client {
     float: left;
     width: 65%;
-  }
-
-  footer {
-    text-align: center;
+    text-align: left;
   }
 }
