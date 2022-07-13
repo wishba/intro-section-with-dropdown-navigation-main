@@ -6,6 +6,21 @@ body {
 p {
   font-size: 18px;
   font-family: 'Epilogue', sans-serif;
+  color: hsl(0, 0%, 41%);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-size: 18px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+button {
+  font-size: 18px;
+  font-family: 'Epilogue', sans-serif;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 header img {
@@ -55,6 +70,18 @@ nav a {
   width: 100%;
 }
 
+.nav__login {
+  border: none;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+}
+
+.nav__register {
+  border: 2px solid hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+}
+
 .section__image img {
   width: 100%;
 }
@@ -65,12 +92,22 @@ nav a {
   padding: 15px;
 }
 
+.section__header {
+  color: hsl(0, 0%, 8%);
+  font-size: 2em;
+  font-weight: 700;
+}
+
 footer {
   text-align: center;
 }
 
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
+  button {
+    padding: 10px 20px;
+  }
+
   header a {
     display: none;
   }
@@ -111,7 +148,7 @@ footer {
   }
 
   article {
-    width: 90%;
+    width: 85%;
     margin: auto;
     overflow: auto;
   }
@@ -125,7 +162,20 @@ footer {
     content: url(images/image-hero-desktop.png);
   }
 
-  .section__main,
+  .section__main {
+    float: left;
+    width: 65%;
+    text-align: left;
+  }
+
+  .section__header {
+    font-size: 5vw;
+  }
+
+  .section__body {
+    width: 70%;
+  }
+
   .section__client {
     float: left;
     width: 65%;
