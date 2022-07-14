@@ -14,22 +14,22 @@
 
   <header>
     <img src="images/logo.svg" alt="snap logo">
-    <a onclick="openNav()" href="#">
+    <a onclick="navOpen()" href="#">
       <img src="images/icon-menu.svg" alt="open menu">
     </a>
   </header>
 
-  <nav id="sideNav" class="">
+  <nav id="navSide" class="">
     <div class="nav__close">
-      <a onclick="closeNav()" href="#">
+      <a onclick="navClose()" href="#">
         <img src="images/icon-close-menu.svg " alt="close menu">
       </a>
     </div>
 
     <div>
-      <a href="#">
+      <a onclick="toggleFeature()" href="#">
         Features
-        <img class="nav__arrow" src="images/icon-arrow-down.svg" alt="feature dropdown menu">
+        <img id="navFeature" class="nav__arrow" src="images/icon-arrow-down.svg" alt="feature dropdown menu">
       </a>
       <div class="nav__menu">
         <a href="#">
@@ -52,9 +52,9 @@
     </div>
 
     <div>
-      <a href="#">
+      <a onclick="toggleCompany()" href="#">
         Company
-        <img class="nav__arrow" src="images/icon-arrow-down.svg" alt="Company dropdown menu">
+        <img id="navCompany" class="nav__arrow" src="images/icon-arrow-down.svg" alt="Company dropdown menu">
       </a>
       <div class="nav__menu">
         <a href="#">History</a>
@@ -105,22 +105,31 @@
   </footer>
 
   <script>
-    function openNav() {
-      document.getElementById("sideNav").className = "nav--open";
+    function navOpen() {
+      document.getElementById("navSide").className = "nav--open";
     }
 
-    function closeNav() {
-      document.getElementById("sideNav").className = "";
+    function navClose() {
+      document.getElementById("navSide").className = "";
     }
 
-    /* function toggleNav() {
-      const x = document.getElementById("sideNav");
-      if (x.style.display === "block") {
-        x.style.display = "none";
+    function toggleFeature() {
+      const x = document.getElementById("navFeature");
+      if (x.className === "nav__arrow") {
+        x.className += " arrow-up";
       } else {
-        x.style.display = "block";
+        x.className = "nav__arrow";
       }
-    } */
+    }
+
+    function toggleCompany() {
+      const x = document.getElementById("navCompany");
+      if (x.className === "nav__arrow") {
+        x.className += " arrow-up";
+      } else {
+        x.className = "nav__arrow";
+      }
+    }
   </script>
 </body>
 

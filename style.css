@@ -60,6 +60,10 @@ nav a {
   padding-left: 5px;
 }
 
+.nav__arrow.arrow-up {
+  content: url(images/icon-arrow-up.svg);
+}
+
 .nav__menu {
   display: none;
   padding: 0 1em;
