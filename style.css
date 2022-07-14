@@ -23,6 +23,10 @@ button {
   border-radius: 15px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 header img {
   float: left;
   padding: 20px 15px;
@@ -113,7 +117,13 @@ nav a {
 .section__main button {
   color: hsl(0, 0%, 98%);
   background-color: hsl(0, 0%, 8%);
-  border: none;
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.section__main button:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 41%);
 }
 
 footer {
