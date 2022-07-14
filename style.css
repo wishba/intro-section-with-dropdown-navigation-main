@@ -19,7 +19,7 @@ a {
 button {
   font-size: 18px;
   font-family: 'Epilogue', sans-serif;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 15px;
 }
 
@@ -106,15 +106,18 @@ nav a {
   font-weight: 700;
 }
 
+.section__main button {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  border: none;
+}
+
 footer {
   text-align: center;
 }
 
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
-  button {
-    padding: 10px 20px;
-  }
 
   header a {
     display: none;
