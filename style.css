@@ -162,23 +162,18 @@ footer {
     content: url(images/image-hero-desktop.png);
   }
 
-  .section__main {
+  .section__main,
+  .section__client {
     float: left;
-    width: 65%;
+    width: 60%;
     text-align: left;
   }
 
   .section__header {
-    font-size: 5vw;
+    font-size: 4em;
   }
 
   .section__body {
     width: 70%;
-  }
-
-  .section__client {
-    float: left;
-    width: 65%;
-    text-align: left;
   }
 }
