@@ -31,7 +31,7 @@
         Features
         <img id="navFeature" class="nav__arrow" src="images/icon-arrow-down.svg" alt="feature dropdown menu">
       </a>
-      <div class="nav__menu">
+      <div id="menuFeature" class="nav__menu">
         <a href="#">
           <img src="images/icon-todo.svg" alt="todo icon">
           Todo List
@@ -56,7 +56,7 @@
         Company
         <img id="navCompany" class="nav__arrow" src="images/icon-arrow-down.svg" alt="Company dropdown menu">
       </a>
-      <div class="nav__menu">
+      <div id="menuCompany" class="nav__menu">
         <a href="#">History</a>
         <a href="#">Our Team</a>
         <a href="#">Blog</a>
@@ -120,6 +120,13 @@
       } else {
         x.className = "nav__arrow";
       }
+
+      const y = document.getElementById("menuFeature");
+      if (y.className === "nav__menu") {
+        y.className += " menu--open";
+      } else {
+        y.className = "nav__menu";
+      }
     }
 
     function toggleCompany() {
@@ -128,6 +135,13 @@
         x.className += " arrow-up";
       } else {
         x.className = "nav__arrow";
+      }
+
+      const y = document.getElementById("menuCompany");
+      if (y.className === "nav__menu") {
+        y.className += " menu--open";
+      } else {
+        y.className = "nav__menu";
       }
     }
   </script>

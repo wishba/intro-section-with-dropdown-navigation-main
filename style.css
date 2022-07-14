@@ -69,6 +69,10 @@ nav a {
   padding: 0 1em;
 }
 
+.nav__menu.menu--open {
+  display: block;
+}
+
 .nav__button {
   padding: 10px 20px;
 }
