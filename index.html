@@ -14,14 +14,14 @@
 
   <header>
     <img src="images/logo.svg" alt="snap logo">
-    <a href="#">
+    <a onclick="openNav()" href="#">
       <img src="images/icon-menu.svg" alt="open menu">
     </a>
   </header>
 
-  <nav>
+  <nav id="sideNav" class="">
     <div class="nav__close">
-      <a href="#">
+      <a onclick="closeNav()" href="#">
         <img src="images/icon-close-menu.svg " alt="close menu">
       </a>
     </div>
@@ -104,6 +104,24 @@
     Coded by <a href="https://github.com/wishba">Wisnu Bayu</a>.
   </footer>
 
+  <script>
+    function openNav() {
+      document.getElementById("sideNav").className = "nav--open";
+    }
+
+    function closeNav() {
+      document.getElementById("sideNav").className = "";
+    }
+
+    /* function toggleNav() {
+      const x = document.getElementById("sideNav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    } */
+  </script>
 </body>
 
 </html>

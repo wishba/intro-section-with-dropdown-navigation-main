@@ -42,6 +42,10 @@ nav {
   width: 200px;
 }
 
+nav.nav--open {
+  display: block;
+}
+
 nav a {
   display: block;
   padding: 10px 20px;
