@@ -102,8 +102,7 @@ nav a {
   width: 100%;
 }
 
-.section__main,
-.section__client {
+.section__main {
   text-align: center;
   padding: 15px;
 }
@@ -124,6 +123,15 @@ nav a {
   color: hsl(0, 0%, 8%);
   background-color: hsl(0, 0%, 98%);
   border: 2px solid hsl(0, 0%, 41%);
+}
+
+.section__client {
+  text-align: center;
+}
+
+.section__client img {
+  width: 20%;
+  padding: 5px;
 }
 
 footer {
@@ -181,17 +189,24 @@ footer {
   .section__image {
     float: right;
     width: 30%;
+    /* padding-top: 50px; */
   }
 
   .section__image img {
     content: url(images/image-hero-desktop.png);
   }
 
-  .section__main,
+  .section__main {
+    float: left;
+    width: 60%;
+    text-align: left;
+  }
+
   .section__client {
     float: left;
     width: 60%;
     text-align: left;
+    padding: 15px;
   }
 
   .section__header {
