@@ -193,6 +193,11 @@ footer {
     float: left;
   }
 
+  nav a:hover,
+  nav img:hover {
+    filter: brightness(8%);
+  }
+
   .nav__close {
     display: none;
   }
@@ -205,6 +210,14 @@ footer {
   .nav__button button {
     display: inline;
     width: auto;
+  }
+
+  .nav__button button:hover {
+    color: hsl(0, 0%, 8%);
+  }
+
+  .nav__register:hover {
+    border: 2px solid hsl(0, 0%, 8%);
   }
 
   article {
