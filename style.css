@@ -50,14 +50,31 @@ nav.nav--open {
   display: block;
 }
 
+.nav__close {
+  text-align: right;
+  padding: 10px;
+}
+
 nav a {
   display: block;
   padding: 10px 20px;
 }
 
-.nav__close {
-  text-align: right;
-  padding: 10px;
+.nav__arrow {
+  padding-left: 5px;
+}
+
+.arrow-up {
+  content: url(images/icon-arrow-up.svg);
+}
+
+.nav__menu {
+  display: none;
+  padding: 0 1em;
+}
+
+.nav__menu.menu--open {
+  display: block;
 }
 
 .nav__button {
@@ -125,54 +142,8 @@ footer {
 }
 
 
-/* ----------------------------------------- */
-
-.nav__arrow {
-  padding-left: 5px;
-  /* content: url(images/icon-arrow-up.svg); */
-  /* content: url(images/icon-arrow-down.svg); */
-}
-
-.arrow-up {
-  content: url(images/icon-arrow-up.svg);
-}
-
-.nav__menu {
-  display: none;
-  padding: 0 1em;
-}
-
-.nav__menu.menu--open {
-  display: block;
-}
-
 /* when the screen is more than 375px wide */
 @media screen and (min-width: 375px) {
-  .nav__arrow {
-    /* content: url(images/icon-arrow-up.svg); */
-    content: url(images/icon-arrow-down.svg);
-  }
-
-  .arrow-up {
-    /* content: url(images/icon-arrow-up.svg); */
-  }
-
-  /* hover */
-  /* content: url(images/icon-arrow-up.svg); */
-
-  .nav__menu {
-    /* display: none; */
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  .nav__menu.menu--open {
-    display: none;
-  }
-
-  /* -------------------------------------------- */
-
 
   header a {
     display: none;
@@ -185,12 +156,20 @@ footer {
     width: auto;
   }
 
-  nav a {
-    padding: 20px 10px;
-  }
-
   nav>div {
     float: left;
+  }
+
+  nav>div:hover .nav__menu {
+    display: block;
+  }
+
+  .nav__close {
+    display: none;
+  }
+
+  nav a {
+    padding: 20px 10px;
   }
 
   nav a:hover,
@@ -198,7 +177,17 @@ footer {
     filter: brightness(8%);
   }
 
-  .nav__close {
+  .nav__arrow {
+    content: url(images/icon-arrow-down.svg);
+  }
+
+  .nav__menu {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .nav__menu.menu--open {
     display: none;
   }
 
@@ -258,4 +247,5 @@ footer {
   .section__client img {
     width: 5em;
   }
+
 }
