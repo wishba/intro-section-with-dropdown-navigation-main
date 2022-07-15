@@ -112,6 +112,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .section__client img {
@@ -159,7 +160,6 @@ footer {
   /* hover */
   /* content: url(images/icon-arrow-up.svg); */
 
-
   .nav__menu {
     /* display: none; */
     position: absolute;
@@ -197,9 +197,6 @@ footer {
     display: none;
   }
 
-
-
-
   .nav__button {
     float: right;
     padding: 20px 15px;
@@ -219,7 +216,6 @@ footer {
   .section__image {
     float: right;
     width: 30%;
-    /* padding-top: 50px; */
   }
 
   .section__image img {
