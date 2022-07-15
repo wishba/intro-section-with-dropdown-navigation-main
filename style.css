@@ -228,22 +228,21 @@ footer {
     text-align: left;
   }
 
+  .section__header {
+    font-size: 4em;
+  }
+
+  .section__body {
+    max-width: 500px;
+  }
+
   .section__client {
     float: left;
-    width: 60%;
     justify-content: left;
     padding: 5px;
   }
 
   .section__client img {
     width: 5em;
-  }
-
-  .section__header {
-    font-size: 4em;
-  }
-
-  .section__body {
-    width: 70%;
   }
 }
