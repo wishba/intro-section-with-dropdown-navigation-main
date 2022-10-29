@@ -5,91 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap">
-  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 
 <body>
-
   <header>
-    <img src="images/logo.svg" alt="snap logo">
-    <a onclick="navOpen()" href="#">
-      <img src="images/icon-menu.svg" alt="open menu">
-    </a>
+    <img src="images/logo.svg" alt="logo">
+    <img src="images/icon-menu.svg" alt="open nav button">
+    <nav>
+      <img src="images/icon-close-menu.svg" alt="close nav button">
+      <ul>
+        <li>Features
+          <ul>
+            <li>Todo List</li>
+            <li>Calendar</li>
+            <li>Reminders</li>
+            <li>Planning</li>
+          </ul>
+        </li>
+        <li>Company
+          <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <div>
+        <button>Login</button>
+        <button>Register</button>
+      </div>
+    </nav>
   </header>
 
-  <nav id="navSide" class="">
-    <div class="nav__close">
-      <a onclick="navClose()" href="#">
-        <img src="images/icon-close-menu.svg " alt="close menu">
-      </a>
-    </div>
-
-    <div>
-      <a onclick="toggleFeature()" href="#">
-        Features
-        <img id="navFeature" class="nav__arrow" src="images/icon-arrow-down.svg" alt="feature dropdown menu">
-      </a>
-      <div id="menuFeature" class="nav__menu">
-        <a href="#">
-          <img src="images/icon-todo.svg" alt="todo icon">
-          Todo List
-        </a>
-        <a href="#">
-          <img src="images/icon-calendar.svg" alt="calendar icon">
-          Calendar
-        </a>
-        <a href="#">
-          <img src="images/icon-reminders.svg" alt="reminder icon">
-          Reminders
-        </a>
-        <a href="#">
-          <img src="images/icon-planning.svg" alt="planing icon">
-          Planning
-        </a>
-      </div>
-    </div>
-
-    <div>
-      <a onclick="toggleCompany()" href="#">
-        Company
-        <img id="navCompany" class="nav__arrow" src="images/icon-arrow-down.svg" alt="Company dropdown menu">
-      </a>
-      <div id="menuCompany" class="nav__menu">
-        <a href="#">History</a>
-        <a href="#">Our Team</a>
-        <a href="#">Blog</a>
-      </div>
-    </div>
-
-    <div>
-      <a href="#">Careers</a>
-    </div>
-
-    <div>
-      <a href="#">About</a>
-    </div>
-
-    <div class="nav__button">
-      <button class="nav__login">Login</button>
-      <button class="nav__register">Register</button>
-    </div>
-  </nav>
-
   <main>
-    <div class="section__image"> </div>
-
-    <div class="section__main">
-      <h1 class="section__header">Make remote work</h1>
-      <p class="section__body">
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <button>Learn more</button>
-    </div>
-
-    <div class="section__client">
+    <img src="images/image-hero-desktop.png" alt="main image">
+    <h1>Make remote work</h1>
+    <p>
+      Get your team in sync, no matter your location. Streamline processes,
+      create team rituals, and watch productivity soar.
+    </p>
+    <button>Learn more</button>
+    <div>
       <img src="images/client-databiz.svg" alt="databiz logo">
       <img src="images/client-audiophile.svg" alt="audiophile logo">
       <img src="images/client-meet.svg" alt="meet logo">
@@ -99,50 +58,8 @@
 
   <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/wishba">Wisnu Bayu</a>.
+    Coded by <a href="https://github.com/wishba" target="_blank">Wisnu Bayu</a>.
   </footer>
-
-  <script>
-    function navOpen() {
-      document.getElementById("navSide").className = "nav--open";
-    }
-
-    function navClose() {
-      document.getElementById("navSide").className = "";
-    }
-
-    function toggleFeature() {
-      const x = document.getElementById("navFeature");
-      if (x.className === "nav__arrow") {
-        x.className += " arrow-up";
-      } else {
-        x.className = "nav__arrow";
-      }
-
-      const y = document.getElementById("menuFeature");
-      if (y.className === "nav__menu") {
-        y.className += " menu--open";
-      } else {
-        y.className = "nav__menu";
-      }
-    }
-
-    function toggleCompany() {
-      const x = document.getElementById("navCompany");
-      if (x.className === "nav__arrow") {
-        x.className += " arrow-up";
-      } else {
-        x.className = "nav__arrow";
-      }
-
-      const y = document.getElementById("menuCompany");
-      if (y.className === "nav__menu") {
-        y.className += " menu--open";
-      } else {
-        y.className = "nav__menu";
-      }
-    }
-  </script>
 </body>
 
 </html>
