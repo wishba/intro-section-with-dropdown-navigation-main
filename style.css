@@ -34,10 +34,6 @@ li {
   display: flex;
 }
 
-.header__logo {
-  /* margin-top: auto; */
-}
-
 .header>* {
   margin-top: auto;
   margin-bottom: auto;
@@ -99,11 +95,28 @@ li {
     text-align: left;
   }
 
-  .main__content {
-    grid-area: 1/1/2/2;
-  }
-
   .main__img {
     content: url(images/image-hero-desktop.png);
+  }
+
+  .main__content {
+    grid-area: 1/1/2/2;
+    position: relative;
+    display: grid;
+  }
+
+  .main__content-body {
+    margin: auto;
+  }
+
+  .main__content-body>* {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .main__content-client {
+    position: absolute;
+    bottom: 0;
   }
 }
