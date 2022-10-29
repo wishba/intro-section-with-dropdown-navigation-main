@@ -25,3 +25,33 @@ body {
 p {
   font-size: 18px;
 }
+
+.header {
+  display: flex;
+}
+
+.header>* {
+  margin-bottom: auto;
+}
+
+.btn__menu {
+  margin-left: auto;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+}
+
+.main {
+  text-align: center;
+}
+
+.main__img {
+  content: url(images/image-hero-mobile.png);
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
