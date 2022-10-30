@@ -74,8 +74,8 @@ li {
   width: 100%;
 }
 
-.main__content {
-  margin: 3.25rem 1rem;
+.main__content-body {
+  margin: 3.25rem 1rem 0;
 }
 
 .main__content-body h1 {
@@ -93,6 +93,17 @@ li {
   border-radius: 15px;
   background-color: var(--Almost-Black);
   color: var(--Almost-White);
+  font-family: inherit;
+}
+
+.main__content-client {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+.main__content-client>* {
+  transform: scale(.7);
+  margin: auto;
 }
 
 .footer {
