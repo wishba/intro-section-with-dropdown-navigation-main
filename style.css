@@ -41,7 +41,7 @@ li {
   margin-bottom: auto;
 }
 
-.btn__menu {
+.nav__open {
   margin-left: auto;
 }
 
@@ -51,7 +51,7 @@ li {
   right: 0;
 }
 
-.btn__menu-close {
+.nav__close {
   position: absolute;
   right: 0;
 }
@@ -74,19 +74,19 @@ li {
   width: 100%;
 }
 
-.main__content-body {
+.main__body {
   margin: 3.25rem 1rem 0;
 }
 
-.main__content-body h1 {
+.main__body h1 {
   color: var(--Almost-Black);
 }
 
-.main__content-body p {
+.main__body p {
   color: var(--Medium-Gray);
 }
 
-.main__content-body button {
+.main__body button {
   height: 3rem;
   width: 8.5rem;
   border: none;
@@ -96,12 +96,12 @@ li {
   font-family: inherit;
 }
 
-.main__content-client {
+.main__client {
   display: flex;
   margin: 2.5rem 0;
 }
 
-.main__content-client>* {
+.main__client>* {
   transform: scale(.7);
   margin: auto;
 }
@@ -120,7 +120,7 @@ li {
     margin-top: 0.5rem;
   }
 
-  .btn__menu {
+  .nav__open {
     display: none;
   }
 
@@ -130,20 +130,20 @@ li {
     width: 100%;
   }
 
-  .btn__menu-close {
+  .nav__close {
     display: none;
   }
 
-  .nav>ul {
+  .nav__list {
     display: flex;
     margin-top: 0.5rem;
   }
 
-  .nav>ul>li {
+  .nav__item {
     margin-left: 2.5rem;
   }
 
-  .nav>ul>li>img {
+  .nav__icon {
     margin-left: .5rem;
   }
 
@@ -160,7 +160,7 @@ li {
     font-family: inherit;
   }
 
-  .nav__button-login {
+  .nav__login {
     border: none;
   }
 
@@ -181,26 +181,26 @@ li {
     display: grid;
   }
 
-  .main__content-body {
+  .main__body {
     margin: auto 2.5rem;
   }
 
-  .main__content-body>* {
+  .main__body>* {
     display: block;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
-  .main__content-body h1 {
+  .main__body h1 {
     font-size: 4rem;
     max-width: 11ch;
   }
 
-  .main__content-body p {
+  .main__body p {
     max-width: 45ch;
   }
 
-  .main__content-client {
+  .main__client {
     position: absolute;
     bottom: 0;
     margin: auto auto 0 2.5rem;
