@@ -173,6 +173,9 @@ li {
 
   .main__img {
     content: url(images/image-hero-desktop.png);
+    height: 40rem;
+    width: auto;
+    margin: auto;
   }
 
   .main__content {
