@@ -74,8 +74,30 @@ li {
   width: 100%;
 }
 
+.main__content {
+  margin: 3.25rem 1rem;
+}
+
+.main__content-body h1 {
+  color: var(--Almost-Black);
+}
+
+.main__content-body p {
+  color: var(--Medium-Gray);
+}
+
+.main__content-body button {
+  height: 3rem;
+  width: 8.5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+}
+
 .footer {
   text-align: center;
+  margin: 0 1rem;
 }
 
 @media (min-width:600px) {
