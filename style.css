@@ -164,6 +164,10 @@ li {
     border: none;
   }
 
+  .nav__register {
+    border: 2px solid var(--Medium-Gray);
+  }
+
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -175,17 +179,18 @@ li {
     content: url(images/image-hero-desktop.png);
     height: 40rem;
     width: auto;
-    margin: auto;
   }
 
   .main__content {
     grid-area: 1/1/2/2;
     position: relative;
     display: grid;
+    margin-left: auto;
   }
 
   .main__body {
-    margin: auto 2.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .main__body>* {
@@ -206,6 +211,6 @@ li {
   .main__client {
     position: absolute;
     bottom: 0;
-    margin: auto auto 0 2.5rem;
+    margin-bottom: 0;
   }
 }
