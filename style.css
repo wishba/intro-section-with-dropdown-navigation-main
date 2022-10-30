@@ -46,11 +46,21 @@ li {
 .nav {
   display: none;
   position: absolute;
+  right: 0;
+}
+
+.btn__menu-close {
+  position: absolute;
+  right: 0;
 }
 
 .nav__feature,
 .nav__company {
   display: none;
+}
+
+.nav__button button {
+  width: 100%;
 }
 
 .main {
@@ -87,6 +97,10 @@ li {
 
   .nav__button {
     margin: auto 0 auto auto;
+  }
+
+  .nav__button button {
+    width: auto;
   }
 
   .main {
