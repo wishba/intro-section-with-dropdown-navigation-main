@@ -112,11 +112,15 @@ li {
 }
 
 @media (min-width:600px) {
-  .btn__menu {
-    display: none;
+  .header {
+    margin: 1.5rem 2.5rem;
   }
 
-  .btn__menu-close {
+  .header__logo {
+    margin-top: 0.5rem;
+  }
+
+  .btn__menu {
     display: none;
   }
 
@@ -126,8 +130,21 @@ li {
     width: 100%;
   }
 
+  .btn__menu-close {
+    display: none;
+  }
+
   .nav>ul {
     display: flex;
+    margin-top: 0.5rem;
+  }
+
+  .nav>ul>li {
+    margin-left: 2.5rem;
+  }
+
+  .nav>ul>li>img {
+    margin-left: .5rem;
   }
 
   .nav__button {
@@ -136,6 +153,15 @@ li {
 
   .nav__button button {
     width: auto;
+    height: 2.5rem;
+    width: 6.5rem;
+    border-radius: 15px;
+    background: none;
+    font-family: inherit;
+  }
+
+  .nav__button-login {
+    border: none;
   }
 
   .main {
